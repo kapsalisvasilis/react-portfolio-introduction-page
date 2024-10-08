@@ -1,0 +1,41 @@
+/* src/components/Header.css */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: hsl(0, 2%, 9%); /* Default background color */
+  color: #b85412;
+  font-family: 'Arial', sans-serif;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+
+h1 {
+  font-size: 3em;
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 0.56s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* Add padding to the body to prevent content overlap */
+body {
+  padding-top: 100px; /* Adjust this value based on the header height */
+}

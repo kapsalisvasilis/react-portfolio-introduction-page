@@ -1,0 +1,55 @@
+/* src/components/SocialMedia.css */
+#social-media {
+  text-align: center;
+  margin-bottom: 100px;  /* Space between heading and images */
+  font-size: 24px;       /* Adjust heading font size */
+  color: #b85412;           /* Adjust text color */
+}
+
+
+
+/* Centering the entire container */
+.revolver-container {
+  position: relative;
+  width: 700px;  /* Size of the revolving container */
+  height: 700px;
+  margin: 0 auto;  /* Center horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Revolver Image */
+.revolver-image {
+  position: absolute;
+  width: 600px;   /* Size of the revolver image */
+  height: 600px;
+  transform-origin: center center; /* Ensure it rotates around the center */
+}
+
+/* Revolving bullets (social media icons) */
+.revolver-chamber {
+  position: absolute;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  transform-origin: center center; /* Ensure it rotates around the center */
+}
+
+.revolver-bullet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0; /* Ensure it rotates around the center */
+}
+
+.revolver-bullet img {
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.revolver-bullet img:hover {
+  transform: scale(1.4); /* Hover effect to enlarge the icons */
+}

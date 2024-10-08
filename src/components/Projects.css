@@ -1,0 +1,20 @@
+/* src/components/Projects.css */
+
+/* General styles for the projects section */
+#projects {
+  margin: 20px auto; 
+  padding: 20px; 
+  width: 80%; 
+  
+  max-width: 800px;
+  font-size: 18px
+}
+
+/* Light Mode Styles */
+#projects h2, #projects h3 {
+  color: #b85412; /* Default heading color in light mode */
+}
+
+#projects p {
+  color: #b85412; /* Default paragraph color in light mode */
+}
