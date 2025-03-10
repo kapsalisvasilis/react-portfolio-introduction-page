@@ -6,9 +6,8 @@ function Projects() {
   return (
     <section id="projects">
       <h2>if you are seeing this page that means I am most likely searching for a job.</h2>
-      <h2>since I finished my thesis on a saddlepoint algorithm.</h2>
-      <h2> I am most likely three lessons away from the computer science degree.</h2>
-      <h2>what I learned in university.</h2>
+      <h2>so i will guide you through the main</h2>
+      <h2>projects that caught my attention through the years</h2>
       <div>
         <h3> 1 - a web app using spring boot and mysql</h3>
         <p>

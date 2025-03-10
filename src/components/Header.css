@@ -6,10 +6,10 @@ header {
   width: 100%;
   text-align: center;
   padding: 20px;
-  background-color: hsl(0, 2%, 9%); /* Default background color */
+  background-color: hsl(0, 2%, 9%);
   color: #b85412;
   font-family: 'Arial', sans-serif;
-  z-index: 1000; /* Ensure it stays on top of other elements */
+  z-index: 1000;
 }
 
 
@@ -35,7 +35,7 @@ h1 {
   50% { border-color: orange; }
 }
 
-/* Add padding to the body to prevent content overlap */
+
 body {
-  padding-top: 100px; /* Adjust this value based on the header height */
+  padding-top: 100px;
 }
