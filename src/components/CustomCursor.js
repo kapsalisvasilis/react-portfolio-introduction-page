@@ -1,6 +1,6 @@
 // src/components/CustomCursor.js
 import React, { useEffect, useState } from 'react';
-import './CustomCursor.css'; // Import CSS for cursor styling
+import './CustomCursor.css';
 
 const CustomCursor = () => {
     const [cursorStyle, setCursorStyle] = useState({

@@ -1,21 +1,23 @@
 /* src/App.css */
 
 @font-face {
-    font-family: 'Roboto-Black';
-    src: url('./fonts/Roboto-Black.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  .app {
-    text-align: center;
-    font-family: 'Roboto-Black', Arial, sans-serif; /* Use the custom font */
-    background-color: hsl(0, 2%, 9%); /* Default background color */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  body {
-    cursor: none; /* Hides the default cursor */
+  font-family: 'Roboto-Black';
+  src: url('./fonts/Roboto-Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.app {
+  text-align: center;
+  font-family: 'Roboto-Black', Arial, sans-serif; 
+  background-color: hsl(0, 2%, 9%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+body {
+  cursor: none; /* hide the default cursor */
 }

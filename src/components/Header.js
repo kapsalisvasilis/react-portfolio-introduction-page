@@ -4,7 +4,7 @@ import './Header.css';
 
 function Header() {
   const [text, setText] = useState('');
-  const fullText = "hello there. i am vasileios. here i showcase my portfolio.";
+  const fullText = "hello there. i am vasileios.";
 
   useEffect(() => {
     let i = 0;

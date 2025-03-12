@@ -24,8 +24,8 @@ function Counter() {
         style={{
           padding: '10px 20px',
           fontSize: '16px',
-          backgroundColor: 'black', // Change background color to black
-          color: 'orange', // Change text color to orange
+          backgroundColor: 'black', // background color to black
+          color: 'orange', // text color to orange
           border: 'none',
           cursor: 'pointer',
           borderRadius: '5px'
