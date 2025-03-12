@@ -36,10 +36,10 @@ function Counter() {
 
       {message && (
         <motion.p
-          initial={{ opacity: 0 }} // Start hidden
-          animate={{ opacity: 1 }}  // Fade in
-          transition={{ duration: 0.5 }} // Smooth transition
-          style={{ color: 'orange', fontWeight: 'bold' }} // Change text color to orange
+          initial={{ opacity: 0 }} 
+          animate={{ opacity: 1 }}  
+          transition={{ duration: 0.5 }} 
+          style={{ color: 'orange', fontWeight: 'bold' }}
         >
           {message}
         </motion.p>
