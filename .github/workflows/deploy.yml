@@ -1,19 +1,47 @@
-name: Deploy
+name: Deploy React App
+
 on:
   push:
-    branches: [main]
+    branches:
+      - main  # Change if your branch is named "master"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
-      - run: yarn deploy
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build React App
+        run: yarn build
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          path: build/
+          path: build
+
+  deploy:
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
